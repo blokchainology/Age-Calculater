@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.url {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+
+.item:hover {
+    background-color: black ;
+}
+
+.container{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px 30px;
+}
+
+.input-container{
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: rgb(42, 161, 119);
+padding: 30px 25px;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+input,button{
+    height: 50px;
+    font-weight: 500;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+input{
+    width: 60%;
+    padding: 20px;
+}
+
+button{
+    width: 30%;
+}
+
+.output-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.output-container div{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(42, 161, 119);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.output-container span{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        width: 90%;
+        padding: 5px 10px;
+    }
+    button , input {
+        font-size: 20px;
+    }
+}
